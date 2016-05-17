@@ -52,6 +52,8 @@
             this.showDictionaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addWordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeWordRangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.exportDictionaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -80,8 +82,6 @@
             this.importDialog = new System.Windows.Forms.OpenFileDialog();
             this.exportDialog = new System.Windows.Forms.SaveFileDialog();
             this.conTextEdit1 = new Conpad.ConTextEdit();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.exportDictionaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -99,7 +99,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(16, 5, 0, 5);
-            this.menuStrip1.Size = new System.Drawing.Size(1941, 58);
+            this.menuStrip1.Size = new System.Drawing.Size(1941, 55);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -113,7 +113,7 @@
             this.importToolStripMenuItem,
             this.exportToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(75, 48);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(75, 45);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
@@ -170,7 +170,7 @@
             this.insertImageToolStripMenuItem,
             this.bulletsToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(104, 48);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(104, 45);
             this.editToolStripMenuItem.Text = "Insert";
             // 
             // insertTableToolStripMenuItem
@@ -204,7 +204,7 @@
             this.saveKeyboardToolStripMenuItem,
             this.loadKeyboardToolStripMenuItem});
             this.keyboardToolStripMenuItem.Name = "keyboardToolStripMenuItem";
-            this.keyboardToolStripMenuItem.Size = new System.Drawing.Size(157, 48);
+            this.keyboardToolStripMenuItem.Size = new System.Drawing.Size(157, 45);
             this.keyboardToolStripMenuItem.Text = "Keyboard";
             // 
             // switchKeyboardToolStripMenuItem
@@ -261,7 +261,7 @@
             this.toolStripSeparator5,
             this.exportDictionaryToolStripMenuItem});
             this.wordsToolStripMenuItem.Name = "wordsToolStripMenuItem";
-            this.wordsToolStripMenuItem.Size = new System.Drawing.Size(116, 48);
+            this.wordsToolStripMenuItem.Size = new System.Drawing.Size(116, 45);
             this.wordsToolStripMenuItem.Text = "Words";
             // 
             // showDictionaryToolStripMenuItem
@@ -289,12 +289,24 @@
             this.removeWordRangeToolStripMenuItem.Text = "Remove Word Range";
             this.removeWordRangeToolStripMenuItem.Click += new System.EventHandler(this.removeWordRangeToolStripMenuItem_Click);
             // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(603, 6);
+            // 
+            // exportDictionaryToolStripMenuItem
+            // 
+            this.exportDictionaryToolStripMenuItem.Name = "exportDictionaryToolStripMenuItem";
+            this.exportDictionaryToolStripMenuItem.Size = new System.Drawing.Size(606, 46);
+            this.exportDictionaryToolStripMenuItem.Text = "Export";
+            this.exportDictionaryToolStripMenuItem.Click += new System.EventHandler(this.exportDictionaryToolStripMenuItem_Click);
+            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(92, 48);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(92, 45);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
@@ -338,7 +350,7 @@
             this.toolStripSeparator3,
             this.SuperscriptButton,
             this.SubscriptButton});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 58);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 55);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1941, 49);
             this.toolStrip1.TabIndex = 4;
@@ -499,27 +511,15 @@
             this.conTextEdit1.KeyboardIdentifiers = ((System.Collections.Generic.List<string>)(resources.GetObject("conTextEdit1.KeyboardIdentifiers")));
             this.conTextEdit1.KeyboardInUse = 0;
             this.conTextEdit1.Keyboards = ((System.Collections.Generic.List<System.Collections.Generic.Dictionary<string, string>>)(resources.GetObject("conTextEdit1.Keyboards")));
-            this.conTextEdit1.Location = new System.Drawing.Point(0, 107);
+            this.conTextEdit1.Location = new System.Drawing.Point(0, 104);
             this.conTextEdit1.Name = "conTextEdit1";
-            this.conTextEdit1.Size = new System.Drawing.Size(1941, 1268);
+            this.conTextEdit1.Size = new System.Drawing.Size(1941, 1271);
             this.conTextEdit1.TabIndex = 5;
             this.conTextEdit1.Text = "";
             this.conTextEdit1.TextStyleChanged += new Conpad.TextStyleChangedEventHandler(this.conTextEdit1_ManageStyles);
             this.conTextEdit1.TextChanged += new System.EventHandler(this.conTextEdit1_TextChanged);
             this.conTextEdit1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.conTextEdit1_KeyDown);
             this.conTextEdit1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.conTextEdit1_KeyUp);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(603, 6);
-            // 
-            // exportDictionaryToolStripMenuItem
-            // 
-            this.exportDictionaryToolStripMenuItem.Name = "exportDictionaryToolStripMenuItem";
-            this.exportDictionaryToolStripMenuItem.Size = new System.Drawing.Size(606, 46);
-            this.exportDictionaryToolStripMenuItem.Text = "Export";
-            this.exportDictionaryToolStripMenuItem.Click += new System.EventHandler(this.exportDictionaryToolStripMenuItem_Click);
             // 
             // Main
             // 
