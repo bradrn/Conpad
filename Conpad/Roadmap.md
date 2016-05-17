@@ -6,11 +6,10 @@ Custom keyboards
 Dictionary Integration  
 Changing word in dictionary changes corresponding word in text  
 Placing infixes/discontinuous morphemes according to stress  
-
-### What I am currently implementing
-
 Saving and loading custom keyboards  
 Various text effects (tables, bullets, colours, images etc.)
+
+### What I am currently implementing
 
 ### What I need to implement/am thinking of implementing
 
